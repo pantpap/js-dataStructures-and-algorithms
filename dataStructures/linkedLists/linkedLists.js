@@ -13,7 +13,7 @@ class LinkedList {
         this.length = 1;
     }
 
-    push(value){
+    push(value){ // O(1) time complexity
         const newNode = new Node(value);
         if(!this.head){
             this.head = newNode;
