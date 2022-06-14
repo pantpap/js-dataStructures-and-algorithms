@@ -79,6 +79,27 @@ class BinarySearchTree {
         // myTree.insert(52)
         // myTree.insert(82)
     }
+
+    findMinValueNode(currentNode){
+        while(currentNode.left){
+            currentNode = currentNode.left;
+        }
+        return currentNode;
+         // let myTree = new BinarySearchTree();
+        // myTree.insert(47)
+        // myTree.insert(21)
+        // myTree.insert(76)
+        // myTree.insert(18)
+        // myTree.insert(27)
+        // myTree.insert(52)
+        // myTree.insert(82)
+
+        // find min value of the tree
+        // myTree.findMinValueNode(myTree.root)
+
+        // find minValue of a subTree
+        // myTree.findMinValueNode(myTree.root.right)
+    }
 }
 
 let myTree = new BinarySearchTree();
