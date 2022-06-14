@@ -25,6 +25,20 @@ class Queue {
         this.length++;
         return this
     }
+
+    dequeue(){
+        if(index  === 0) return undefined;
+        let temp = this.first;
+        if(this,length === 1){
+            this.first = null;
+            this.last = null;
+        } else {
+            this.first = this.first.next;
+            temp.next = null;
+        }
+        this.length--;
+        return temp; 
+    }
 }
 
 let myQueue = new Queue(4)
