@@ -28,5 +28,15 @@ class Graph {
         }
         return false;
     }
-        
+
+    removeVertex(vertex){
+        if(!this.adjacencyllist[vertex]) return undefined
+        while(this.adjacencyList[vertex].length){
+            let temp = this.adjacencyList.pop();
+            this.removeEdge(vertex, temp);
+                
+        }
+        delete this.adjacencyList[vertex];
+        return this;
+    }
 }
